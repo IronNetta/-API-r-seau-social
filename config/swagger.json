@@ -1,0 +1,110 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Doc",
+        "version": "1.0.0",
+        "license": {
+            "name": "ISC"
+        },
+        "description": "API pour gerer des utilisateurs"
+    },
+    "tags":[
+        {
+          "name": "authentication",
+          "description":"API qui gere le signup/signin"
+        },
+        {
+          "name": "update user",
+          "description":"API qui gere la bio de l'utilisateur"
+        },
+        {
+            "name": "message",
+          "description":"API qui gere le systeme d'envoie de message ou de commentaire"
+        },
+        {
+            "name": "like/dislike",
+          "description":"API qui gere le systeme de like ou de dislike"
+        }
+    ],
+    "paths": {
+            "get": {
+                "summary": "/",
+                "responses": {},
+                "tags": []
+            },
+        "/api/users/register/": {
+            "post": {
+                "tags":["authentication"],
+                "summary": "/api/users/register/",
+                "responses": {}
+            }
+        },
+        "/api/users/login/": {
+            "post": {
+                "tags":["authentication"],
+                "summary": "/api/users/login/",
+                "responses": {}
+            }
+        },
+        "/api/users/me/": {
+            "get": {
+                "tags":["update user"],
+                "summary": "/api/users/me/",
+                "responses": {}
+            },
+            "put": {
+                "tags":["update user"],
+                "summary": "/api/users/me/",
+                "responses": {}
+            }
+        },
+        "/api/messages/new/": {
+            "post": {
+                "tags":["message"],
+                "summary": "/api/messages/new/",
+                "responses": {}
+            }
+        },
+        "/api/messages/": {
+            "get": {
+                "tags":["message"],
+                "summary": "/api/messages/",
+                "responses": {}
+            }
+        },
+        "/api/messages/{messageId}/vote/like": {
+            "post": {
+                "tags":["like/dislike"],
+                "summary": "/api/messages/{messageId}/vote/like",
+                "parameters": [
+                    {
+                        "name": "messageId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/api/messages/{messageId}/vote/dislike": {
+            "post": {
+                "tags":["like/dislike"],
+                "summary": "/api/messages/{messageId}/vote/dislike",
+                "parameters": [
+                    {
+                        "name": "messageId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    }
+}
