@@ -2,6 +2,8 @@
 
 Ce projet est une API conçue pour gérer l'authentification des utilisateurs, la gestion de leur profil, l'envoi de Commentaires, ainsi qu'un système de likes/dislikes sur les messages. Il inclut également une documentation complète avec Swagger.
 
+<img src="nodejs.png" alt="Description de l'image" />
+
 ## Table des matières
 - [Technologies utilisées](#technologies-utilisées)
 - [Prérequis](#prérequis)
