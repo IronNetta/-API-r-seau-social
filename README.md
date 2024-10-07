@@ -1,6 +1,6 @@
-# API Utilisateurs, Messages, et Système de Votes
+# API Utilisateurs, Commentaires, et Système de likes
 
-Ce projet est une API conçue pour gérer l'authentification des utilisateurs, la gestion de leur profil, l'envoi de messages, ainsi qu'un système de likes/dislikes sur les messages. Il inclut également une documentation complète avec Swagger.
+Ce projet est une API conçue pour gérer l'authentification des utilisateurs, la gestion de leur profil, l'envoi de Commentaires, ainsi qu'un système de likes/dislikes sur les messages. Il inclut également une documentation complète avec Swagger.
 
 ## Table des matières
 - [Technologies utilisées](#technologies-utilisées)
