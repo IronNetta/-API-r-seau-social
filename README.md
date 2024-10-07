@@ -39,12 +39,11 @@ Avant de commencer, assurez-vous d'avoir installé :
    git clone https://github.com/votre-utilisateur/votre-repo.git
 Accédez au dossier du projet :
 
-bash
-Copier le code
-cd votre-repo
+   ```bash
+   cd votre-repo
 Installez les dépendances nécessaires :
 
-bash
+```bash
 Copier le code
 npm install
 Configuration
